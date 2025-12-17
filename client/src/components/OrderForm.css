@@ -1,0 +1,121 @@
+:root {
+  --medical-primary: #0ea5e9; /* Sky blue */
+  --medical-secondary: #0284c7; /* Darker blue */
+  --medical-accent: #ef4444; /* Red */
+  --medical-bg: #f0f9ff; /* Very light blue bg */
+  --medical-card-bg: #ffffff;
+  --medical-text: #334155;
+  --medical-border: #e2e8f0;
+}
+
+.medical-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--medical-bg);
+  min-height: calc(100vh - 80px); /* Adjust for navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.medical-form-card {
+  background-color: var(--medical-card-bg);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  border-top: 6px solid var(--medical-primary);
+}
+
+.medical-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--medical-secondary);
+}
+
+.medical-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.medical-icon {
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--medical-text);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--medical-border);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box; /* Important for padding */
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--medical-primary);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: var(--medical-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--medical-secondary);
+}
+
+.required-mark {
+  color: var(--medical-accent);
+  margin-left: 4px;
+}
+
+.order-summary {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--medical-secondary);
+}
+
+.order-summary h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: var(--medical-secondary);
+}
